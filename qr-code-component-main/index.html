@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    body{
+      background-color: rgb(202, 202, 224);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .qr_code{
+      display: block;
+      text-align: center;
+      padding: 20px;
+      border: 2cm;
+      background-color: white;
+      margin: 18% 37%;
+      border-radius: 15px;
+    }
+    #qr_text{
+      text-align: center;
+      
+    }
+    img{
+      text-align: center;
+      height: 300px;
+      border-radius: 7px;
+    }
+    .attribution { font-size: 11px; text-align: center; margin-bottom: 0;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media (max-width: 768px) {
+  .qr_code {
+    margin: 10% auto;
+    padding: 16px;
+    width: 80%;
+    border-width: 1rem;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .qr_code {
+    margin: 8% auto;
+    padding: 12px;
+    width: 85%;
+    border-width: 0.75rem;
+  }
+  #qr_text {
+    font-size: 0.9rem;
+  }
+  img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  .attribution {
+    font-size: 0.8rem;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="qr_code">
+<img src="images/image-qr-code.png" alt="qr code">
+<div id="qr_text">
+  <p><strong> Improve your front-end skills by building projects. </strong></p>
+  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
+
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Brian</a>.
+  </div>
+</body>
+</html>
